@@ -5,14 +5,19 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+  public schoolLabels = [
+    { title: 'Konkursy', url: '/folder/Konkursy', icon: 'trophy' },
+    { title: 'Ogłoszenia', url: '/folder/Ogłoszenia', icon: 'paper-plane' },
+    { title: 'Dokumenty', url: '/folder/Dokumenty', icon: 'file-tray-full' },
+    { title: 'Biblioteka', url: '/folder/Biblioteka', icon: 'library' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public schoolerLabels = [
+    { title: 'Ankiety', url: '/folder/Ankiety', icon: 'pie-chart' },
+    { title: 'Zbiórki', url: '/folder/Zbiórki', icon: 'cash' },
+    { title: 'Ogłoszenia', url: '/folder/Ogłoszenia', icon: 'paper-plane' },
+    { title: 'Samorząd', url: '/folder/Samorząd', icon: 'people' },
+    { title: 'Wycieczki', url: '/folder/Wycieczki', icon: 'bus' },
+    { title: 'Nauka', url: '/folder/Nauka', icon: 'book' },
+  ];
   constructor() {}
 }
