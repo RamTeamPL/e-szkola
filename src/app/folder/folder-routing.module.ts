@@ -2,11 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { FolderPage } from './folder.page';
+import { CompetitionsComponent } from './competitions/competitions.component';
 
 const routes: Routes = [
   {
     path: '',
     component: FolderPage
+  },
+  {
+    path: 'competitions',
+    component: CompetitionsComponent
   }
 ];
 
