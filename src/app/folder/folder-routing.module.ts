@@ -8,10 +8,6 @@ const routes: Routes = [
   {
     path: '',
     component: FolderPage
-  },
-  {
-    path: 'competitions',
-    component: CompetitionsComponent
   }
 ];
 
