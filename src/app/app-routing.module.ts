@@ -71,7 +71,9 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/surveys/surveys.module').then((m) => m.SurveysPageModule),
   },
+
 ];
+
 
 @NgModule({
   imports: [
