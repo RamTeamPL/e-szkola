@@ -13,15 +13,6 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'inbox',
-    loadChildren: () =>
-      import('./pages/inbox/inbox.module').then((m) => m.InboxPageModule),
-  },
-  {
-    path: 'outbox',
-    loadChildren: () =>
-      import('./pages/outbox/outbox.module').then((m) => m.OutboxPageModule),
-  },  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
