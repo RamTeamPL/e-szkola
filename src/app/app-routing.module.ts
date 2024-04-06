@@ -10,7 +10,19 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'inbox',
+    loadChildren: () => import('./pages/inbox/inbox.module').then( m => m.InboxPageModule)
   },
+  {
+    path: 'outbox',
+    loadChildren: () => import('./pages/outbox/outbox.module').then( m => m.OutboxPageModule)
+  },
+  {
+    path: 'spam',
+    loadChildren: () => import('./pages/spam/spam.module').then( m => m.SpamPageModule)
+  },
+
 ];
 
 @NgModule({
