@@ -70,10 +70,15 @@ const routes: Routes = [
     path: 'surveys',
     loadChildren: () =>
       import('./pages/surveys/surveys.module').then((m) => m.SurveysPageModule),
-  },  {
+  },
+  {
     path: 'score',
     loadChildren: () => import('./pages/score/score.module').then( m => m.ScorePageModule)
+  },  {
+    path: 'library',
+    loadChildren: () => import('./pages/library/library.module').then( m => m.LibraryPageModule)
   },
+
 
 
 ];
