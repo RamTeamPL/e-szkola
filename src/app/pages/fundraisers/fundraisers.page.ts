@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+/* eslint-disable @angular-eslint/no-empty-lifecycle-method */
+import { Component, OnInit, ViewChild, ViewChildren, QueryList } from '@angular/core';
+import { IonSelect, IonSelectOption } from '@ionic/angular'; 
 
 @Component({
   selector: 'app-fundraisers',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fundraisers.page.scss'],
 })
 export class FundraisersPage implements OnInit {
-
+  
+  
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
