@@ -1,0 +1,8 @@
+{
+  "name": "e-szkola",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "24ee8ef4"
+}
