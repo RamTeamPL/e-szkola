@@ -1,0 +1,24 @@
+#container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+section {
+  background-color: rgb(37, 37, 37);
+  margin: auto;
+  width: 96%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ion-button {
+  display: block;
+  margin-top: 15px;
+}
