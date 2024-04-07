@@ -4,15 +4,23 @@
     width: 100%;
   }
   
-  section {
+  .surv1 {
     background-color: rgb(37, 37, 37);
     margin: auto;
     width: 96%;
-    padding: 5px;
+    padding: 0px;
     margin-top: 10px;
     border-radius: 10px;
+    
   }
-  
+
+  .surv2{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    margin: 0;
+  }
+
   h3 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,3 +31,12 @@
     margin-top: 15px;
   }
   
+  ion-item{
+    width: 100%;
+  }
+
+  // ion-checkbox{
+  //   width: 10%;
+  //   margin-left: 90%;
+  //   right: 0;
+  // }
