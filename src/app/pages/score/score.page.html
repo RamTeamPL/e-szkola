@@ -6,3 +6,33 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+
+<ion-content>
+  <ion-list [inset]="true">
+
+    <section class="surv1" *ngFor="let item of items; let i = index" >
+      
+      <div class="surv2" (click)="toggleVotes(i)">
+        <h3>{{item.name}}</h3>
+      </div>
+      
+
+      
+        
+        <ion-list *ngIf="isOpen[i]">
+          
+          <ion-item *ngFor="let student of item.students; let i = index">
+            
+            {{ student }} {{item.votes[i]}}
+            
+          </ion-item>
+        </ion-list>
+      
+    </section>
+
+    
+
+    
+  </ion-list>
+</ion-content>
