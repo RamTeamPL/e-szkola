@@ -17,7 +17,7 @@
         <ion-select-option>Marek Sobuś</ion-select-option>
         <ion-select-option>Krystian Baran</ion-select-option>
       </ion-select>
-      <ion-button color="dark">Zagłosuj</ion-button>
+      <ion-button color="dark" (click)="animate()">Zagłosuj</ion-button>
     </section>
     <section id="surv1">
       <h3>Skarbnik:</h3>
@@ -26,7 +26,9 @@
         <ion-select-option>Marek Sobuś</ion-select-option>
         <ion-select-option>Krystian Baran</ion-select-option>
       </ion-select>
-      <ion-button color="dark">Zagłosuj</ion-button>
+      <ion-button color="dark" (click)="animate()">Zagłosuj</ion-button>
     </section>
   </div>
+  
+  <div class="voted" [class.animate]="voted">Twój głos został oddany</div>
 </ion-content>
