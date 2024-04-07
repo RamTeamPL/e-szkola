@@ -35,8 +35,10 @@ export class LibraryPage implements OnInit {
 
   searchBooks(): any[] {
     return this.books.filter(book =>
-      book.title.toLowerCase().includes(this.searchTerm.toLowerCase())
-    );}
+      book.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+      book.author.toLowerCase().includes(this.searchTerm.toLowerCase())
+    );
+  }
   // getHalfOfItems(): any[] {
   //   const middleIndex = Math.ceil(this.books.length / 2);
   //   return this.books.slice(0, middleIndex);
