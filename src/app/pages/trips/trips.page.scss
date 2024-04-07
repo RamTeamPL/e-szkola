@@ -1,0 +1,46 @@
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed gray;
+  font-size: 28px;
+}
+
+section {
+  background-color: rgb(37, 37, 37);
+  margin: auto;
+  width: 96%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+h4 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.data {
+  text-align: right;
+  margin-right: 10px;
+  display: block;
+}
+
+ion-button {
+  font-weight: 900;
+  display: block;
+}
+
+ion-checkbox {
+  display: block;
+  width: 85px;
+  margin-left: 15px;
+}
