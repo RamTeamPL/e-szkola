@@ -9,14 +9,15 @@ export class LibraryPage implements OnInit {
 
   constructor() { 
   }
-  // API_URL = "https://wolnelektury.pl/api/books/?format=api"
+  // API_URL = "https://wolnelektury.pl/api/books/?format=api";
   // data: any;
+  // books: [] = [];
 
   ngOnInit() {
     // fetch(this.API_URL)
     //   .then((response) => response.json())
-    //   .then((this.data.slice(0, 20)))
-    //   .then((quotesData) => (this.data = quotesData));
+    //   .then((quotesData) => (this.data = quotesData))
+    //   .then((data) => this.books)
       
   }
   searchTerm: string = '';
@@ -35,8 +36,10 @@ export class LibraryPage implements OnInit {
 
   searchBooks(): any[] {
     return this.books.filter(book =>
-      book.title.toLowerCase().includes(this.searchTerm.toLowerCase())
-    );}
+      book.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+      book.author.toLowerCase().includes(this.searchTerm.toLowerCase())
+    );
+  }
   // getHalfOfItems(): any[] {
   //   const middleIndex = Math.ceil(this.books.length / 2);
   //   return this.books.slice(0, middleIndex);
