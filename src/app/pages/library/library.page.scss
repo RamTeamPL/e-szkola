@@ -15,4 +15,7 @@ ion-card-title, ion-card-subtitle{
 ion-card-header, ion-card{
     height: 150px;
     text-align: center;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
 }
