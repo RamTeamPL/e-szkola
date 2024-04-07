@@ -9,14 +9,15 @@ export class LibraryPage implements OnInit {
 
   constructor() { 
   }
-  // API_URL = "https://wolnelektury.pl/api/books/?format=api"
+  // API_URL = "https://wolnelektury.pl/api/books/?format=api";
   // data: any;
+  // books: [] = [];
 
   ngOnInit() {
     // fetch(this.API_URL)
     //   .then((response) => response.json())
-    //   .then((this.data.slice(0, 20)))
-    //   .then((quotesData) => (this.data = quotesData));
+    //   .then((quotesData) => (this.data = quotesData))
+    //   .then((data) => this.books)
       
   }
   searchTerm: string = '';
