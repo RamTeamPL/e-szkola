@@ -14,9 +14,8 @@ export class GovernmentPage implements OnInit {
   }
 
   animate() {
-    this.voted = true; // Update voted when animation starts
+    this.voted = true;
     setTimeout(() => {
-      this.voted = false; // Reset voted after animation completes
-    }, 3000); // Adjust this value to match the duration of your animation
-  }
-}
+      this.voted = false;
+    }, 3000);
+}}

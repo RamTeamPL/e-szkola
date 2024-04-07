@@ -1,4 +1,4 @@
-#Sat Apr 06 22:22:45 CEST 2024
+#Sun Apr 07 07:28:38 CEST 2024
 base.0=C\:\\Users\\HP\\Desktop\\e-szkola\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\HP\\Desktop\\e-szkola\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\2\\classes.dex
 base.2=C\:\\Users\\HP\\Desktop\\e-szkola\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\5\\classes.dex

@@ -21,7 +21,9 @@
           <ion-label>NIE</ion-label>
         </ion-segment-button>
       </ion-segment>
-      <ion-button color="dark">Zagłosuj</ion-button>
+      <ion-button color="dark" (click)="animate()">Zagłosuj</ion-button>
     </section>
   </div>
+
+  <div class="voted" [class.animate]="voted2">Twój głos został oddany</div>
 </ion-content>
