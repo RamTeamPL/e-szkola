@@ -9,5 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class SurveysPage implements OnInit {
   constructor() {}
 
+  voted: boolean = false;
+
   ngOnInit() {}
+
+  animate() {
+    this.voted = true; // Update voted when animation starts
+    setTimeout(() => {
+      this.voted = false; // Reset voted after animation completes
+    }, 3000); // Adjust this value to match the duration of your animation
+  }
 }
