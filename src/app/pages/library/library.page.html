@@ -5,4 +5,18 @@
       <ion-menu-button name="menu"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
+  <ion-searchbar placeholder="Szukaj lektur" [(ngModel)]="searchTerm"></ion-searchbar>
 </ion-header>
+
+<ion-content>
+  
+  <ion-card *ngFor="let book of searchBooks()" style>
+    <ion-card-header style="background-image: url({{book.image}});">
+      <ion-card-title>{{book.title}}</ion-card-title>
+      <ion-card-subtitle>{{book.author}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+
+    
+    
