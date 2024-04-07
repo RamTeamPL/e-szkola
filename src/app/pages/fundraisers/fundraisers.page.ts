@@ -9,8 +9,53 @@ import { IonSelect, IonSelectOption } from '@ionic/angular';
 })
 export class FundraisersPage implements OnInit {
   
+  items = [
+    { 
+      name: 'Zbiórka na prezent dla wychowawcy)', 
+      students: [
+        "Jan Kowalski",
+        "Marek Sobuś",
+        "Krystian Baran"
+      ],
+      votes:[
+        true,
+        false,
+        false
+      ]
+    },
+    { 
+      name: 'Zbiórka na znicze', 
+      students: [
+        "Jan Kowalski",
+        "Marek Sobuś",
+        "Krystian Baran"
+      ],
+      votes:[
+        false,
+        false,
+        true
+      ]
+    },
+    
+  ];
+  isOpen: boolean[] = [];
+
   
-  constructor() { }
+  constructor() {
+    this.items.forEach(() => this.isOpen.push(false));
+  }
+
+  toggleVotes(index: number) {
+    
+    this.isOpen[index] = !this.isOpen[index];
+  }
+
+  closeAllLists() {
+    this.isOpen.forEach((value, index) => {
+      this.isOpen[index] = false;
+    });
+  }
+  
 
   ngOnInit() {
     
